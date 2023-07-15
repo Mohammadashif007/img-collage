@@ -11,6 +11,7 @@ img {
     display: flex;
     gap: 5px;
     margin-bottom: 5px;
+
 }
 .row > div {
     flex: 1;
@@ -29,4 +30,25 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+}
+
+/* Small device */
+
+@media screen and (max-width: 576px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* medium device */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
 }
